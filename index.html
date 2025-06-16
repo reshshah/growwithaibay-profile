@@ -78,6 +78,33 @@
       font-size: 0.8rem;
       color: #999;
     }
+
+    /* ===== Lead-capture form ===== */
+    #lead-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin: 2rem 0;
+    }
+    #lead-form input[type="text"],
+    #lead-form input[type="email"],
+    #lead-form input[type="tel"] {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #ccd6f6;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    #lead-form button {
+      background: #1a73e8;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.25s;
+    }
+    #lead-form button:hover { background: #155ec2; }
   </style>
 </head>
 <body>
@@ -157,6 +184,17 @@
         Let’s Grow Your Business Together
       </a>
     </div>
+
+    <!-- ===== Lead-capture form ===== -->
+    <h2 style="margin-top:3rem;color:#444;">📬 Get a Free Growth Audit</h2>
+    <form id="lead-form" action="https://formspree.io/f/xeokkrrl" method="POST">
+      <input type="text"  name="name"   placeholder="Your name" required>
+      <input type="email" name="email"  placeholder="Email address*" required>
+      <input type="tel"   name="phone"  placeholder="Phone number (optional)">
+      <input type="text"  name="_gotcha" style="display:none">
+      <button type="submit">Send ➜</button>
+    </form>
+    <!-- ===== end Lead-capture form ===== -->
 
     <div class="contact">
       📧 Email: <a href="mailto:reshshah30@gmail.com">reshshah30@gmail.com</a><br/>
